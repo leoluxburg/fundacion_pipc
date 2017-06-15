@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/pages/aliados', to: 'pages#aliados'
+  get '/pages/proyectos', to: 'pages#proyectos'
+  get '/pages/quienes_somos', to: 'pages#quienes_somos'
+  get '/pages/mision', to: 'pages#mision'
 end
